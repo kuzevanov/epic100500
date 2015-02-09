@@ -13,7 +13,7 @@ foreach ($rows as $key => $row) {
     echo "<td>" . $row['title'] . "</td>";
     echo "<td>" . $row['price'] . "</td>";
     echo "<td><a href='?action=delete&id=" . $row['id'] . "'>удалить</a> "
-        ."<a href=''>редактировать</a>";
+        ."<a href='?action=edit&id=" . $row['id'] . "'>редактировать</a>";
     echo "</tr>";
 }
 echo "</table>";
