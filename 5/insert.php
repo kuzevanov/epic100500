@@ -18,5 +18,6 @@ if (!empty($_POST)) {
                ";
     var_dump($insert);
     $stmt = $pdo->exec($insert);
+    header("Location: index.php");
 }
 

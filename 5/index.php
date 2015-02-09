@@ -10,7 +10,7 @@
     <li><a href="index.php?action=insert">Добавить</a></li>
 </ul>
 <?php
-$actions = ['insert', 'list'];
+$actions = ['insert', 'list', 'delete', 'edit'];
 $action = isset($_GET['action']) ? $_GET['action'] : 'list';
 if (!in_array($action, $actions)) {
     exit('Bye');
